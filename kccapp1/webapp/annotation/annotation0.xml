@@ -1,0 +1,422 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Communication.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/sap/ZFIORI_REPORT_KCC_SRV/$metadata">
+        <edmx:Include Namespace="ZFIORI_REPORT_KCC_SRV"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+            <Annotations Target="ZFIORI_REPORT_KCC_SRV.Output">
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>Fo</PropertyPath>
+                         <PropertyPath>Fu</PropertyPath>
+
+                          <PropertyPath>Dtr</PropertyPath>
+                           <PropertyPath>Entrega</PropertyPath>
+                           <PropertyPath>Fwo</PropertyPath>
+                    </Collection>
+                </Annotation>
+
+                
+
+
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+
+
+
+
+      <Record Type="UI.DataField">
+      <PropertyValue Property="Value" Path="Fo"/>
+      <PropertyValue Property="Label" String="Orden de flete"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="FoType"/>
+    <PropertyValue Property="Label" String="Clase de orden de flete"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="Mtransport"/>
+    <PropertyValue Property="Label" String="Medio de transporte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="Vehiculo"/>
+    <PropertyValue Property="Label" String="Recurso de vehículo"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="Conductor"/>
+    <PropertyValue Property="Label" String="Conductor"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="OrigenEtapa"/>
+    <PropertyValue Property="Label" String="Ubicación de origen de la etapa de FO"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="DestinoEtapa"/>
+    <PropertyValue Property="Label" String="Ubicación de destino de la etapa de FO"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="OrigenEtapaCode"/>
+    <PropertyValue Property="Label" String="Ubicación de origen de la etapa de FO Codigo"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="DestinoEtapaCode"/>
+    <PropertyValue Property="Label" String="Ubicación de destino de la etapa de FO Codigo"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="ZOrigenEtapa"/>
+    <PropertyValue Property="Label" String="Region de origen de la etapa de unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="ZDestinoEtapa"/>
+    <PropertyValue Property="Label" String="Region de destino de la etapa de unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="StopId"/>
+    <PropertyValue Property="Label" String="Item Etapa"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="FPickupPlanFrom"/>
+    <PropertyValue Property="Label" String="Fecha de recogida planificada (de) de la unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="FPickupPlanTo"/>
+    <PropertyValue Property="Label" String="Fecha de recogida planificada (a) de la unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="FDeliveryPlanTo"/>
+    <PropertyValue Property="Label" String="Fecha de recogida planificada (a) de la unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="FDeliveryPlanFrom"/>
+    <PropertyValue Property="Label" String="Fecha de entrega planificada (de) de la unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="FDeliveryPlanTo"/>
+    <PropertyValue Property="Label" String="Fecha de entrega planificada (a) de la unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="SEjecucionStage"/>
+    <PropertyValue Property="Label" String="Status de ejecución de la etapa de unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="CreateByFo"/>
+    <PropertyValue Property="Label" String="Creado por (Orden de flete)"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="CreateOnFo"/>
+    <PropertyValue Property="Label" String="Creado el (Orden de flete)"/>
+<Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+                        </Record>
+
+
+                        <Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="Dtr"/>
+    <PropertyValue Property="Label" String="DTR"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="Entrega"/>
+    <PropertyValue Property="Label" String="Entrega original"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="EntregaType"/>
+    <PropertyValue Property="Label" String="Clase de entrega ERP"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="OrigenDtr"/>
+    <PropertyValue Property="Label" String="Ubicación de origen de la DTR"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="DestinoDtr"/>
+    <PropertyValue Property="Label" String="Ubicación de destino de la DTR"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="OrigenDtrCode"/>
+    <PropertyValue Property="Label" String="Ubicación de origen de la DTR Cogigo"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="DestinoDtrCode"/>
+    <PropertyValue Property="Label" String="Ubicación de destino de la DTR Codigo"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="ZOrigenDtr"/>
+    <PropertyValue Property="Label" String="Region de origen de la DTR"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="ZDestinoDtr"/>
+    <PropertyValue Property="Label" String="Region de destino de la DTR"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="Fwo"/>
+    <PropertyValue Property="Label" String="FWO"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="OExpedicion"/>
+    <PropertyValue Property="Label" String="Orden de expedición"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="FwoType"/>
+    <PropertyValue Property="Label" String="Clase FWO"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="OrigenFwo"/>
+    <PropertyValue Property="Label" String="Ubicación de origen de la FWO"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="DestinoFwo"/>
+    <PropertyValue Property="Label" String="Ubicación de destino de la FWO"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="OrigenFwoCode"/>
+    <PropertyValue Property="Label" String="Ubicación de origen de la FWO Codigo"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="DestinoFwoCode"/>
+    <PropertyValue Property="Label" String="Ubicación de destino de la FWO Codigo"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="ZOrigenFwo"/>
+    <PropertyValue Property="Label" String="Region de origen de la FWO"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="ZDestinoFwo"/>
+    <PropertyValue Property="Label" String="Region de destino de la FWO"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="CreateByFwo"/>
+    <PropertyValue Property="Label" String="Creado por (FWO)"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="Fu"/>
+    <PropertyValue Property="Label" String="Unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="FuType"/>
+    <PropertyValue Property="Label" String="Clase de unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="OrigenFu"/>
+    <PropertyValue Property="Label" String="Ubicación de origen de la unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="DestinoFu"/>
+    <PropertyValue Property="Label" String="Ubicación de destino de la unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="OrigenFuCode"/>
+    <PropertyValue Property="Label" String="Ubicación de origen de la unidad de porte Codigo"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="DestinoFuCode"/>
+    <PropertyValue Property="Label" String="Ubicación de destino de la unidad de porte Codigo"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="ZOrigenFu"/>
+    <PropertyValue Property="Label" String="Region de origen de la unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="ZDestinoFu"/>
+    <PropertyValue Property="Label" String="Region de destino de la unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="SPlanFu"/>
+    <PropertyValue Property="Label" String="Status de planificación de la unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="SEjecucionFu"/>
+    <PropertyValue Property="Label" String="Status de ejecución de la unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="SDeliveryFu"/>
+    <PropertyValue Property="Label" String="Status de entrega de la unidad de porte"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="DescripcionFu"/>
+    <PropertyValue Property="Label" String="Descripción de la unidad de porte (Etiqueta)"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+
+<Record Type="UI.DataField">
+    <PropertyValue Property="Value" Path="Generatedid"/>
+    <PropertyValue Property="Label" String="Identificador"/>
+    <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
+</Record>
+
+
+
+
+
+
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZFIORI_REPORT_KCC_SRV.Output/Fo">
+                <Annotation Term="Common.ValueList">
+                    <Record Type="Common.ValueListType">
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="ValueListProperty" String="Fo"/>
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Fo"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="CollectionPath" String="OutputSet"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+
+
+
+
+             <Annotations Target="ZFIORI_REPORT_KCC_SRV.Output/Dtr">
+                <Annotation Term="Common.ValueList">
+                    <Record Type="Common.ValueListType">
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="ValueListProperty" String="Dtr"/>
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Dtr"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="CollectionPath" String="OutputSet"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+
+
+            <Annotations Target="ZFIORI_REPORT_KCC_SRV.Output/Fu">
+                <Annotation Term="Common.ValueList">
+                    <Record Type="Common.ValueListType">
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="ValueListProperty" String="Fu"/>
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Fu"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="CollectionPath" String="OutputSet"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+
+             <Annotations Target="ZFIORI_REPORT_KCC_SRV.Output/Fwo">
+                <Annotation Term="Common.ValueList">
+                    <Record Type="Common.ValueListType">
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="ValueListProperty" String="Fwo"/>
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Fwo"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="CollectionPath" String="OutputSet"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+
+
+
+ <Annotations Target="ZFIORI_REPORT_KCC_SRV.Output/Entrega">
+                <Annotation Term="Common.ValueList">
+                    <Record Type="Common.ValueListType">
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="ValueListProperty" String="Entrega"/>
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Entrega"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="CollectionPath" String="OutputSet"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                    </Record>
+                </Annotation>
+            </Annotations>
+
+
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

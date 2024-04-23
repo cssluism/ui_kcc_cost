@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZFIORI_REPORT_KCC_SRV" xml:lang="es" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Output" sap:content-version="1">
+                
+<Key>
+
+<PropertyRef Name="Generatedid"/>
+
+</Key>
+
+<Property Name="CreateOnFo" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Creado el (Orden de flete)" sap:unicode="false" Precision="0" Type="Edm.DateTime"/>
+
+<Property Name="OrigenEtapaCode" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de origen de la etapa de FO Codigo" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="DestinoEtapaCode" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de destino de la etapa de FO Codigo" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="FDeliveryPlanFrom" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Fecha de entrega planificada (de) de la unidad de porte" sap:unicode="false" Precision="0" Type="Edm.DateTime"/>
+
+<Property Name="FDeliveryPlanTo" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Fecha de entrega planificada (a) de la unidad de porte" sap:unicode="false" Precision="0" Type="Edm.DateTime"/>
+
+<Property Name="OrigenDtrCode" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de origen de la DTR Cogigo" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="DestinoDtrCode" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de destino de la DTR Codigo" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="FPickupPlanFrom" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Fecha de recogida planificada (de) de la unidad de porte" sap:unicode="false" Precision="0" Type="Edm.DateTime"/>
+
+<Property Name="FPickupPlanTo" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Fecha de recogida planificada (a) de la unidad de porte" sap:unicode="false" Precision="0" Type="Edm.DateTime"/>
+
+<Property Name="OrigenFwoCode" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de origen de la FWO Codigo" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="CreateByFwo" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Creado por (FWO)" sap:unicode="false" Precision="15" Type="Edm.Decimal" Nullable="false" Scale="0"/>
+
+<Property Name="DestinoFwoCode" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de destino de la FWO Codig" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="Generatedid" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Identificador" sap:unicode="false" Type="Edm.Guid" Nullable="false"/>
+
+<Property Name="OrigenFuCode" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="cUbicación de origen de la unidad de porte Codigo" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="Conductor" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Conductor" sap:unicode="false" Type="Edm.String" MaxLength="40"/>
+
+<Property Name="DestinoFuCode" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de destino de la unidad de porte Codigo" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="CreateByFo" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Creado por (Orden de flete)" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="DescripcionFu" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Descripción de la unidad de porte (Etiqueta)" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="DestinoDtr" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de destino de la DTR" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="DestinoEtapa" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de destino de la etapa de FO" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="DestinoFu" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de destino de la unidad de porte" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="DestinoFwo" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de destino de la FWO" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="Dtr" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="DTR" sap:unicode="false" Type="Edm.String" MaxLength="20"/>
+
+<Property Name="Entrega" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Entrega" sap:unicode="false" Type="Edm.String" MaxLength="20"/>
+
+<Property Name="EntregaType" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Clase de entrega ERP" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="Fo" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="FO" sap:unicode="false" Type="Edm.String" MaxLength="20" Nullable="false"/>
+
+<Property Name="FoType" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Clase de orden de flete" sap:unicode="false" Type="Edm.String" MaxLength="4"/>
+
+<Property Name="Fu" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Unidad de porte" sap:unicode="false" Type="Edm.String" MaxLength="20" Nullable="false"/>
+
+<Property Name="FuType" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Clase de unidad de porte" sap:unicode="false" Type="Edm.String" MaxLength="4" Nullable="false"/>
+
+<Property Name="Fwo" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Fwo" sap:unicode="false" Type="Edm.String" MaxLength="20"/>
+
+<Property Name="FwoType" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Clase FWO" sap:unicode="false" Type="Edm.String" MaxLength="4"/>
+
+<Property Name="Mtransport" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Medio de transporte" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="OExpedicion" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Orden de expedición" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="OrigenDtr" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de origen de la DTR" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="OrigenEtapa" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de origen de la etapa de FO" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="OrigenFu" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de origen de la unidad de porte" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="OrigenFwo" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Ubicación de origen de la FWO" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="SDeliveryFu" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Status de entrega de la unidad de porte" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="SEjecucionFu" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Status de ejecución de la unidad de porte" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="SEjecucionStage" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Status de ejecución de la etapa de unidad de porte" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="SPlanFu" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Status de planificación de la unidad de porte" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="StopId" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Parada" sap:unicode="false" Type="Edm.String" MaxLength="10" Nullable="false"/>
+
+<Property Name="Vehiculo" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Vehiculo" sap:unicode="false" Type="Edm.String" MaxLength="40"/>
+
+<Property Name="ZDestinoDtr" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Region de destino de la DTR" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="ZDestinoEtapa" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Region de destino de la etapa de unidad de porte" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="ZDestinoFu" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Region de destino de la unidad de porte" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="ZDestinoFwo" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Region de destino de la FWO" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="ZOrigenDtr" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Region de origen de la DTR" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="ZOrigenEtapa" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Region de origen de la etapa de unidad de porte" sap:unicode="false" Type="Edm.String" MaxLength="50"/>
+
+<Property Name="ZOrigenFu" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Region de origen de la unidad de porte" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+
+<Property Name="ZOrigenFwo" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Region de origen de la FWO" sap:unicode="false" Type="Edm.String" MaxLength="50" Nullable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZFIORI_REPORT_KCC_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="OutputSet" EntityType="ZFIORI_REPORT_KCC_SRV.Output" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="http://devtms:8000/sap/opu/odata/sap/ZFIORI_REPORT_KCC_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="http://devtms:8000/sap/opu/odata/sap/ZFIORI_REPORT_KCC_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
